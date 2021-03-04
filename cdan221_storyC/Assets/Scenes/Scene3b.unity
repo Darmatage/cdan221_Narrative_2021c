@@ -629,7 +629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choice 1a goes here
+  m_Text: Chips and chocolate
 --- !u!222 &1047608324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1405,10 +1405,9 @@ MonoBehaviour:
   Char1speech: {fileID: 1562924555}
   Char2name: {fileID: 314300912}
   Char2speech: {fileID: 1467502104}
-  Char3name: {fileID: 0}
-  Char3speech: {fileID: 0}
   dialogue: {fileID: 1568092984}
   ArtChar1: {fileID: 76159097}
+  ArtChar2: {fileID: 668775197}
   ArtBG1: {fileID: 1332760905}
   Choice1a: {fileID: 1275129257}
   Choice1b: {fileID: 1862412735}
