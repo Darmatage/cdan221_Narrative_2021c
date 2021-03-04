@@ -264,7 +264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choice 1a goes here
+  m_Text: Answer 1
 --- !u!222 &487109772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -418,7 +418,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choice 1b goes here
+  m_Text: Answer 2
 --- !u!222 &681998321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,12 +592,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918665809}
-        m_MethodName: 
+      - m_Target: {fileID: 918665814}
+        m_MethodName: SceneChange2b
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -878,12 +878,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918665809}
-        m_MethodName: 
+      - m_Target: {fileID: 918665814}
+        m_MethodName: talking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -938,6 +938,7 @@ GameObject:
   - component: {fileID: 918665812}
   - component: {fileID: 918665811}
   - component: {fileID: 918665810}
+  - component: {fileID: 918665814}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1033,6 +1034,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &918665814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918665809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5159d15b62039473b80994c4a1cdc23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 1519895211}
+  Char1speech: {fileID: 1249108654}
+  Char2name: {fileID: 1235780980}
+  Char2speech: {fileID: 860580168}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
+  dialogue: {fileID: 1855208045}
+  ArtChar1: {fileID: 1290396437}
+  ArtChar2: {fileID: 109738305}
+  ArtBG1: {fileID: 1942870674}
+  Choice1a: {fileID: 1658360077}
+  Choice1b: {fileID: 1704909971}
+  NextScene1Button: {fileID: 1168402999}
+  NextScene2Button: {fileID: 808512799}
+  nextButton: {fileID: 865402699}
 --- !u!1 &1168402999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,12 +1144,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918665809}
-        m_MethodName: 
+      - m_Target: {fileID: 918665814}
+        m_MethodName: SceneChange2a
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1631,12 +1660,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918665809}
-        m_MethodName: 
+      - m_Target: {fileID: 918665814}
+        m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1761,12 +1790,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918665809}
-        m_MethodName: 
+      - m_Target: {fileID: 918665814}
+        m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
