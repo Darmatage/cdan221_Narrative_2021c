@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueScene3b : MonoBehaviour {
+public class DialogueScene1a : MonoBehaviour {
         public int primeInt = 1; // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -14,7 +14,7 @@ public class DialogueScene3b : MonoBehaviour {
         // public Text Char3name;
         // public Text Char3speech;
         public GameObject dialogue;
-        public GameObject ArtChar1;       
+        public GameObject ArtChar1;
 		public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -29,7 +29,6 @@ public class DialogueScene3b : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
-		ArtChar2.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -52,21 +51,18 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(false);
-			   ArtChar2.SetActive(true);
+               ArtChar1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "K4t";
-                Char2speech.text = "mmrrppp……";
+                Char1name.text = "Jeda";
+                Char1speech.text = "Wakey wakey, human.";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
-               ArtChar1.SetActive(false);
-			   ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "K4t";
-                Char2speech.text = "...";
+                Char2name.text = "You";
+                Char2speech.text = "Wuh..? What happended?";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
@@ -81,7 +77,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "You";
                 Char2speech.text = "Hit me? Why?";
                 //gameHandler.AddPlayerStat(1);
-				
         }
        else if (primeInt == 6){
                 Char1name.text = "Jeda";
@@ -144,8 +139,8 @@ public void talking(){         // main story function. Players hit next to progr
         public void Choice1aFunct(){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "K4t";
-                Char2speech.text = "OHHHHHHhhhHHhHH YUUMM YUM !!";
+                Char2name.text = "You";
+                Char2speech.text = "I don't know what you're talking about!";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -165,9 +160,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange2a(){
-               SceneManager.LoadScene("Scene4");
+               SceneManager.LoadScene("Scene2a");
         }
-        // public void SceneChange2b(){
-                // SceneManager.LoadScene("Scene2b");
-        // }
+        public void SceneChange2b(){
+                SceneManager.LoadScene("Scene2b");
+        }
 }
