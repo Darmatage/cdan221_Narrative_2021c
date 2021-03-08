@@ -163,36 +163,36 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
         }
+	}
+	// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
+	public void Choice1aFunct(){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Eddy";
+			Char2speech.text = "Go to the cafetorium";
+			primeInt = 99;
+			Choice1a.SetActive(true);
+			Choice1b.SetActive(false);
+			nextButton.SetActive(true);
+			allowSpace = true;
+	}
+	public void Choice1bFunct(){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Eddy";
+			Char2speech.text = "I think Mr. Meep plays!… you might need to improve your history grade first.";
+			primeInt = 199;
+			Choice1a.SetActive(false);
+			Choice1b.SetActive(true);
+			nextButton.SetActive(true);
+			allowSpace = true;
+	}
 
-// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
-        public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Go to the cafetorium";
-                primeInt = 99;
-                Choice1a.SetActive(true);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-        public void Choice1bFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "I think Mr. Meep plays!… you might need to improve your history grade first.";
-                primeInt = 199;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(true);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-		
 
-        public void SceneChange2a(){
-               SceneManager.LoadScene("Scene2a");
-        }
-        public void SceneChange2b(){
-                SceneManager.LoadScene("Scene2b");
-        }
+	public void SceneChange2a(){
+		   SceneManager.LoadScene("Scene2a");
+	}
+	public void SceneChange2b(){
+			SceneManager.LoadScene("Scene2b");
+	}
 }
