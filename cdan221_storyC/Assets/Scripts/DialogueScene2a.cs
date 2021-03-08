@@ -14,7 +14,9 @@ public class DialogueScene2a : MonoBehaviour {
         // public Text Char3name;
         // public Text Char3speech;
         public GameObject dialogue;
-        public GameObject ArtChar1;
+		public GameObject ArtJazzTalking;
+		public GameObject ArtJazzExcited;
+		public GameObject ArtJazzSad;
         public GameObject ArtKat;	
         public GameObject ArtKatFish;	
         public GameObject ArtKatChat;
@@ -32,7 +34,9 @@ public class DialogueScene2a : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
-        ArtChar1.SetActive(false);
+ 		ArtJazzTalking.SetActive(false); 
+		ArtJazzExcited.SetActive(false);
+		ArtJazzSad.SetActive(false);
         ArtKat.SetActive(false);
         ArtKatFish.SetActive(false);
         ArtKatChat.SetActive(false);
@@ -59,12 +63,12 @@ public void talking(){         // main story function. Players hit next to progr
         if (primeInt == 1){
                 // AudioSource.Play();
         }
-        else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+        else if (primeInt == 2){ 
+               ArtJazzSad.SetActive(true);
                ArtKat.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "Jazz";
-                Char1speech.text = "The cafetorium seems to be empty. \n hmmmmmm";
+                Char1speech.text = "The cafetorium seems to be empty.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -76,41 +80,67 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 5){
+			   ArtJazzSad.SetActive(false);
+               ArtKat.SetActive(true);
+			   ArtKatChat.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "K4t";
+                Char2speech.text = "MMRRPPP..... \n . . .";
+        }
+       else if (primeInt == 5){
+			   ArtKatChat.SetActive(false);
+			   ArtKatFish.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "K4t";
+                Char2speech.text = "aHA!! a fish bone!";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "K4t";
+                Char2speech.text = "w0WoW! such rare treasure!!";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+       else if (primeInt ==7){
+			   ArtJazzTalking.SetActive(true);
+			   ArtKatFish.SetActive(true);
+                Char1name.text = "Jazz";
+                Char1speech.text = "Hey K4t, Sorry to interrupt your lil scavenger hunt.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
         }
+       else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "K4t";
+                Char2speech.text = "hmm??";
+        }
+		else if (primeInt == 9) {
+                Char1name.text = "Jazz";
+                Char1speech.text = "I have a favor to ask if you don’t mind?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+        else if (primeInt == 10){
+			   ArtKatFish.SetActive(false);
+			   ArtKatSad.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "K4t";
+                Char2speech.text = "This better be import 3:<";
+		}
+        else if (primeInt == 11){
+		       ArtJazzTalking.SetActive(false);
+			   ArtJazzExcited.SetActive(true);
+                Char1name.text = "Jazz";
+                Char1speech.text = "We would like to recruit you to be our keyboardist for the talent show!";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+	
+
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
                 Char1name.text = "Jeda";
@@ -176,3 +206,9 @@ public void talking(){         // main story function. Players hit next to progr
                 SceneManager.LoadScene("Scene2b");
         }
 }
+
+// Turn off "Next" button, turn on "Choice" buttons
+                // nextButton.SetActive(false);
+                // allowSpace = false;
+                // Choice1a.SetActive(true); // function Choice1aFunct()
+                // Choice1b.SetActive(true); // function Choice1bFunct()
