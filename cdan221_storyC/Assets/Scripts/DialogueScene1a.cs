@@ -171,7 +171,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char2name.text = "Eddy";
 			Char2speech.text = "Go to the cafetorium";
 			primeInt = 99;
-			Choice1a.SetActive(true);
+			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
 			nextButton.SetActive(true);
 			allowSpace = true;
@@ -183,7 +183,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char2speech.text = "I think Mr. Meep plays!… you might need to improve your history grade first.";
 			primeInt = 199;
 			Choice1a.SetActive(false);
-			Choice1b.SetActive(true);
+			Choice1b.SetActive(false);
 			nextButton.SetActive(true);
 			allowSpace = true;
 	}
