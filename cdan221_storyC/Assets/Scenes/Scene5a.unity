@@ -767,7 +767,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: choice 1 Room name here
+  m_Text: 'End the day
+
+'
 --- !u!222 &672882008
 CanvasRenderer:
   m_ObjectHideFlags: 0

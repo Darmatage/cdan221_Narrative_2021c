@@ -335,47 +335,34 @@ public class DialogueScene3a : MonoBehaviour
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
             Choice1c.SetActive(true); // function Choice1cFunct()
+            nextButton.SetActive(false);
 
         }
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "How did you know those were my favorite?!! ^q^";
+            ArtMeep.SetActive(true);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Awesome! Thanks Mr. Meep!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(true);
         }
         else if (primeInt == 101)
         {
-            Char1name.text = "Jazz";
-            Char1speech.text = "Lucky guess.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 102)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "Luck is on your side then! I will see you and those chips and chocolate at practice!";
-        }
-        else if (primeInt == 103)
-        {
-            ArtJazzExcited.SetActive(true);
-            ArtJazzTalking.SetActive(false);
-            Char1name.text = "Jazz";
-            Char1speech.text = "We need one more member! Would you be willing to help me see if Mr. Meep would want to join our band?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 104)
-        {
             ArtMeep.SetActive(false);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "Hmmm… Oh sure, why not!";
+            ArtJazzExcited.SetActive(false);
+            ArtJazzTalking.SetActive(true);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Wow that was a close one!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene1Button.SetActive(true);
+            nextButton.SetActive(false);
         }
+       
 
         else if (primeInt == 200)
         {
@@ -400,12 +387,12 @@ public class DialogueScene3a : MonoBehaviour
     public void Choice1aFunct()
     {
         ArtJazzExcited.SetActive(false);
-        ArtJazzTalking.SetActive(true);
+        ArtJazzTalking.SetActive(false);
         ArtMeep.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
-        Char2name.text = "K4t";
-        Char2speech.text = "OHHHHHHhhhHHhHH YUUMM YUM !!";
+        Char2name.text = "Mr. Meep";
+        Char2speech.text = "Wonderful! Perhaps you were paying more attention than I thought. Well a deal is a deal. I’ll join your band!";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -415,24 +402,47 @@ public class DialogueScene3a : MonoBehaviour
     }
     public void Choice1bFunct()
     {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(false);
+        ArtJazzSad.SetActive(true);
+        ArtMeep.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
-        Char2name.text = "You";
-        Char2speech.text = "Sure, anything you want... just lay off the club.";
+        Char2name.text = "Mr. Meep";
+        Char2speech.text = "I’m afraid that is incorrect. I will not be joining your band. Pay more attention to your studies!";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
         allowSpace = true;
+        NextScene2Button.SetActive(true);
+    }
+    public void Choice1cFunct()
+    {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(false);
+        ArtJazzSad.SetActive(true);
+        ArtMeep.SetActive(true);
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "Mr. Meep";
+        Char2speech.text = "I’m afraid that is incorrect. I will not be joining your band. Pay more attention to your studies!";
+        primeInt = 199;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(false);
+        allowSpace = true;
+        NextScene2Button.SetActive(true);
     }
     public void SceneChange2a()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene4b");
     }
     public void SceneChange2b()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene4a");
     }
 }
 
