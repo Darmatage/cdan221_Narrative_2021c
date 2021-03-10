@@ -452,11 +452,11 @@ public class DialogueScene2b : MonoBehaviour
     }
     public void SceneChange2a()
     {
-        SceneManager.LoadScene("Scene3c");
+        SceneManager.LoadScene("Scene3d");
     }
     public void SceneChange2b()
     {
-        SceneManager.LoadScene("Scene3d");
+        SceneManager.LoadScene("Scene3c");
     }
 }
 

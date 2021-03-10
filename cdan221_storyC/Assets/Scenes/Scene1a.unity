@@ -1315,7 +1315,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: choice 2 Room name here
+  m_Text: Go to History Room
 --- !u!222 &1327382974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1991,7 +1991,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: choice 1 Room name here
+  m_Text: Go to cafe
 --- !u!222 &1625966135
 CanvasRenderer:
   m_ObjectHideFlags: 0
