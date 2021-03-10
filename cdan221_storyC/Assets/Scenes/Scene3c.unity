@@ -2148,7 +2148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: History Room
+  m_Text: Go to Practice Room
 --- !u!222 &1693973709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2584,7 +2584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mr. Meep
+  m_Text: Go to Practice Room
 --- !u!222 &1943883201
 CanvasRenderer:
   m_ObjectHideFlags: 0
