@@ -346,7 +346,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655574402}
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -789,8 +789,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Choice1bFunct
+      - m_Target: {fileID: 1655574402}
+        m_MethodName: SceneChange2b
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655574402}
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -1685,7 +1685,7 @@ RectTransform:
   m_Children:
   - {fileID: 1693973707}
   m_Father: {fileID: 1655574401}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1735,7 +1735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655574402}
         m_MethodName: SceneChange2b
         m_Mode: 1
         m_Arguments:
@@ -1958,8 +1958,8 @@ RectTransform:
   - {fileID: 1275129258}
   - {fileID: 1862412736}
   - {fileID: 858503117}
-  - {fileID: 1575004725}
   - {fileID: 1955371025}
+  - {fileID: 1575004725}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1977,30 +1977,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1655574397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9587d7a3ca4ea334dbadf70f542eb932, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e58c2ef83b87d640a97b6ea760883a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
-  dialogue: {fileID: 0}
-  ArtJazzTalking: {fileID: 0}
-  ArtJazzExcited: {fileID: 0}
-  ArtJazzSad: {fileID: 0}
-  ArtKat: {fileID: 0}
-  ArtKatFish: {fileID: 0}
-  ArtKatChat: {fileID: 0}
-  ArtKatSad: {fileID: 0}
-  ArtKatWow: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  Choice1c: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  nextButton: {fileID: 0}
+  Char1name: {fileID: 1878755591}
+  Char1speech: {fileID: 1562924555}
+  Char2name: {fileID: 314300912}
+  Char2speech: {fileID: 1467502104}
+  dialogue: {fileID: 1568092984}
+  ArtJazzTalking: {fileID: 76159097}
+  ArtJazzExcited: {fileID: 1629499039}
+  ArtJazzSad: {fileID: 1848043387}
+  ArtKat: {fileID: 668775197}
+  ArtKatFish: {fileID: 587261560}
+  ArtKatChat: {fileID: 1111348129}
+  ArtKatSad: {fileID: 1062537911}
+  ArtKatWow: {fileID: 2076702899}
+  ArtBG1: {fileID: 1332760905}
+  Choice1a: {fileID: 1275129257}
+  Choice1b: {fileID: 1862412735}
+  Choice1c: {fileID: 858503116}
+  NextScene1Button: {fileID: 1955371024}
+  NextScene2Button: {fileID: 1575004724}
+  nextButton: {fileID: 283363800}
 --- !u!1 &1658975884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +2148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: History Room
+  m_Text: Go to Practice Room
 --- !u!222 &1693973709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2389,7 +2389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655574402}
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -2584,7 +2584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mr. Meep
+  m_Text: Go to Practice Room
 --- !u!222 &1943883201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2625,7 +2625,7 @@ RectTransform:
   m_Children:
   - {fileID: 1943883199}
   m_Father: {fileID: 1655574401}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655574402}
         m_MethodName: SceneChange2a
         m_Mode: 1
         m_Arguments:
