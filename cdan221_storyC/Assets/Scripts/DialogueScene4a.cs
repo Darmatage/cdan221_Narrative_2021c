@@ -58,83 +58,147 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-				dialogue.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==3){
 				ArtChar1.SetActive(true);
 				ArtChar2.SetActive(false);
 				ArtChar3.SetActive(false);
+				ArtChar4.SetActive(false);
+				dialogue.SetActive(true);
                 Char1name.text = "Jazz";
-                Char1speech.text = "Wow Eddy! I’d love to join the talent show, any idea what we could do?";
+                Char1speech.text = "Hey! Are you ready to rock and roll??";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+        }
+       else if (primeInt ==3){
+				ArtChar1.SetActive(true);
+				ArtChar2.SetActive(true);
+				ArtChar3.SetActive(false);
+				ArtChar4.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Eddy";
+                Char2speech.text = "Heck yeah man!";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
 				ArtChar2.SetActive(true);
+				ArtChar3.SetActive(false);
+				ArtChar4.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Hmm… I’m not sure, can’t you sing Jazz?";
-        }
-       else if (primeInt == 5){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Yeah but not good enough to win!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char4name.text = "Mr. Meep";
+                Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
+        }
+       else if (primeInt == 5){
+				ArtChar3.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "K4t";
+                Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
+				Char4name.text = "";
+                Char4speech.text = "";
+     
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Oh I have an Idea!";
+                Char1name.text = "Jazz";
+                Char1speech.text = "Just let me get the mic all set up and then we can start.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt ==7){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Then tell me Eddy! What are you waiting for";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
-                Char2speech.text = "We can make a band! I’ll play the drums";
+                Char2speech.text = "We should decide on a song to blast.";
         }
-		 else if (primeInt == 9){
+       else if (primeInt == 8){
                 Char1name.text = "Jazz";
-                Char1speech.text = "Won’t we need more people for that?";
+                Char1speech.text = "Hmmm… what genre are we thinking?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+		 else if (primeInt == 9){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char4name.text = "Mr. Meep";
+                Char4speech.text = "Something smooth and nostalgic…";
         }
 		 else if (primeInt == 10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Oh yeah, I guess you are right";
-        }
-		 else if (primeInt == 11){
-                Char1name.text = "Jazz";
-                Char1speech.text = "we only have five days! How are we supposed to find a group in time";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "K4t";
+                Char3speech.text = "Something that will knock the socks off the audience!";
+				Char4name.text = "";
+                Char4speech.text = "";
         }
-		 else if (primeInt == 12){
-			 
+		 else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
-                Char2speech.text = "I know everyone in this school who plays an instrument, I might not be on the best terms with all of them but I believe in you Jazz. You can unite us all and take us to victory!";
+                Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
+				Char3name.text = "";
+                Char3speech.text = "";
+        }
+		 else if (primeInt == 12){
+                Char1name.text = "Jazz";
+                Char1speech.text = "That seems to tick all the boxes!";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
+        }
+		 else if (primeInt == 13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "K4t";
+                Char3speech.text = "Ooooo! That’s a cool idea.";
+        }
+		 else if (primeInt == 14){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
+				Char4name.text = "Mr. Meep";
+                Char4speech.text = "I could work with that.";
+        }
+		 else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
+				Char4name.text = "";
+                Char4speech.text = "";
+		 // else if (primeInt == 12){
+			 
+                // Char1name.text = "";
+                // Char1speech.text = "";
+                // Char2name.text = "Eddy";
+                // Char2speech.text = "I know everyone in this school who plays an instrument, I might not be on the best terms with all of them but I believe in you Jazz. You can unite us all and take us to victory!";
 				 // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                // nextButton.SetActive(false);
+                // allowSpace = false;
+                // Choice1a.SetActive(true); // function Choice1aFunct()
+                // Choice1b.SetActive(true); // function Choice1bFunct()
 				
         }
 	
@@ -170,7 +234,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
-			Char2speech.text = "Go to the cafetorium";
+			Char2speech.text = "";
 			primeInt = 99;
 			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
@@ -181,7 +245,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
-			Char2speech.text = "I think Mr. Meep plays!… you might need to improve your history grade first.";
+			Char2speech.text = "";
 			primeInt = 199;
 			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
