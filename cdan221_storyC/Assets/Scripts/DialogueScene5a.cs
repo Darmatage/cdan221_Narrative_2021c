@@ -196,45 +196,7 @@ public class DialogueScene5a : MonoBehaviour
         }
       
         // ENCOUNTER AFTER CHOICE #1
-        else if (primeInt == 100)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "How did you know those were my favorite?!! ^q^";
-        }
-        else if (primeInt == 101)
-        {
-            Char1name.text = "Jazz";
-            Char1speech.text = "Lucky guess.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 102)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "Luck is on your side then! I will see you and those chips and chocolate at practice!";
-        }
-        else if (primeInt == 103)
-        {
-            ArtJazzExcited.SetActive(true);
-            ArtJazzTalking.SetActive(false);
-            Char1name.text = "Jazz";
-            Char1speech.text = "We need one more member! Would you be willing to help me see if Mr. Meep would want to join our band?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 104)
-        {
-            ArtRivals.SetActive(false);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "K4t";
-            Char2speech.text = "Hmmm… Oh sure, why not!";
-        }
-
+       
         else if (primeInt == 200)
         {
             Char1name.text = "Jeda";
@@ -258,29 +220,34 @@ public class DialogueScene5a : MonoBehaviour
     public void Choice1aFunct()
     {
         ArtJazzExcited.SetActive(false);
-        ArtJazzTalking.SetActive(true);
-        ArtRivals.SetActive(true);
+        ArtJazzTalking.SetActive(false);
+        ArtRivals.SetActive(false);
         Char1name.text = "";
         Char1speech.text = "";
-        Char2name.text = "K4t";
-        Char2speech.text = "OHHHHHHhhhHHhHH YUUMM YUM !!";
+        Char2name.text = "";
+        Char2speech.text = "";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
         allowSpace = true;
+        NextScene1Button.SetActive(true);
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "";
-        Char1speech.text = "";
-        Char2name.text = "You";
-        Char2speech.text = "Sure, anything you want... just lay off the club.";
+        ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(true);
+        ArtRivals.SetActive(false);
+        Char1name.text = "Jazz";
+        Char1speech.text = "It’s been fun, but I really don’t have time for neanderthals like you, and neither do my friends.";
+        Char2name.text = "";
+        Char2speech.text = "";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
         allowSpace = true;
+        NextScene2Button.SetActive(true);
     }
     public void SceneChange2a()
     {

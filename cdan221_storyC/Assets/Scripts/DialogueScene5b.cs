@@ -242,27 +242,31 @@ public class DialogueScene5b : MonoBehaviour
         ArtJazzExcited.SetActive(false);
         ArtJazzTalking.SetActive(true);
         ArtRivals.SetActive(true);
-        Char1name.text = "";
-        Char1speech.text = "";
-        Char2name.text = "K4t";
-        Char2speech.text = "OHHHHHHhhhHHhHH YUUMM YUM !!";
+        Char1name.text = "Jazz";
+        Char1speech.text = "*Sticks out tongue*";
+        Char2name.text = "";
+        Char2speech.text = "";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
         allowSpace = true;
+        NextScene1Button.SetActive(true);
     }
     public void Choice1bFunct()
     {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
-        Char2name.text = "You";
-        Char2speech.text = "Sure, anything you want... just lay off the club.";
+        Char2name.text = "Jazz";
+        Char2speech.text = "...";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
         allowSpace = true;
+        NextScene2Button.SetActive(true);
     }
     public void SceneChange2a()
     {
