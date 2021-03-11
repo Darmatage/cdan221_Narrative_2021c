@@ -27,7 +27,7 @@ public class DialogueScene4b : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
-    //public GameObject gameHandler;
+	public GameHandler gameHandlerObj;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -112,12 +112,26 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
-            Char1name.text = "";
-            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
-            Char3name.text = "K4t";
+           
+
+		if (gameHandlerObj.WhatIsK4t() == true){
+			Char1name.text = "";
+            Char1speech.text = "";
+		    Char3name.text = "K4t";
             Char3speech.text = "I don’t mind! It gave me plenty of time to feast on the snacks Eddy brought. Hurry and set up though, there’s nothing left to eat and I’m getting bored!!";
+		}
+		else{
+            Char1name.text = "Jazz";
+            Char1speech.text = "I'll try my best!";
+			
+			Char3name.text = "";
+            Char3speech.text = "";
+			}
+			
+			
+			
             Char4name.text = "";
             Char4speech.text = "";
 

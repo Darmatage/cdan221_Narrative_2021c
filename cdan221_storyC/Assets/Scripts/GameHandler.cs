@@ -8,6 +8,11 @@ using UnityEngine.UI;
 public class GameHandler : MonoBehaviour{
 
         public static int playerStat;
+	    public static bool gotK4t = false;
+        public static bool gotMeep = false;
+		public GameObject youGotK4t;
+		public GameObject youGotMeep;		
+		
 		
         //public GameObject textGameObject;
 		public static bool GameisPaused = false;
@@ -30,6 +35,8 @@ public class GameHandler : MonoBehaviour{
 
         void Start(){
                 pauseMenuUI.SetActive(false);
+				UpdateK4t(gotK4t);
+				UpdateMeep(gotMeep);
         }
 
         void Update(){
@@ -42,7 +49,32 @@ public class GameHandler : MonoBehaviour{
                         }
                 }
         }
-
+				
+			public void UpdateK4t(bool isK4t){
+				gotK4t = isK4t;
+				if (isK4t == true){
+				youGotK4t.SetActive(true);}
+				else{youGotK4t.SetActive(false);}
+			}	
+			
+			public void UpdateMeep(bool isMeep){
+				gotMeep = isMeep;
+				if (isMeep == true){
+				youGotMeep.SetActive(true);}
+				else{youGotMeep.SetActive(false);}
+			}
+				
+				
+			public bool WhatIsK4t(){
+				return gotK4t;
+				
+			}	
+			
+			public bool WhatIsMeep(){
+				return gotMeep;
+				
+			}				
+			
         void Pause(){
                 pauseMenuUI.SetActive(true);
                 Time.timeScale = 0f;
