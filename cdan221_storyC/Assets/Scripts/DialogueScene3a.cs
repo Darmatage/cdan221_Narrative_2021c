@@ -24,6 +24,10 @@ public class DialogueScene3a : MonoBehaviour
     public GameObject Choice1a;
     public GameObject Choice1b;
     public GameObject Choice1c;
+    public GameObject Choice2a;
+    public GameObject Choice2b;
+    public GameObject Choice3a;
+    public GameObject Choice3b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -42,6 +46,10 @@ public class DialogueScene3a : MonoBehaviour
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -362,7 +370,7 @@ public class DialogueScene3a : MonoBehaviour
             NextScene1Button.SetActive(true);
             nextButton.SetActive(false);
         }
-       
+
 
         else if (primeInt == 200)
         {
@@ -381,10 +389,107 @@ public class DialogueScene3a : MonoBehaviour
             allowSpace = false;
             NextScene2Button.SetActive(true);
         }
-    }
+        else if (primeInt == 300)
+        {
 
-    // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
-    public void Choice1aFunct()
+            ArtJazzExcited.SetActive(false);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Mr. Meep";
+            Char2speech.text = "Oh my, that all seems like too much for me.";
+            Choice1a.SetActive(false);
+            Choice1b.SetActive(false);
+            Choice1c.SetActive(false);
+            nextButton.SetActive(false);
+            Choice2a.SetActive(false);
+            Choice2b.SetActive(false);
+            Choice3a.SetActive(true);
+            Choice3b.SetActive(true);
+            allowSpace = true;
+
+        }
+        else if (primeInt == 400)
+        {
+            ArtJazzExcited.SetActive(false);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Mr. Meep";
+            Char2speech.text = "Alright, I can work with that! I’m in.";
+            Choice1a.SetActive(false);
+            Choice1b.SetActive(false);
+            Choice1c.SetActive(false);
+            nextButton.SetActive(true);
+            Choice2a.SetActive(false);
+            Choice2b.SetActive(false);
+            allowSpace = true;
+
+
+        }
+        else if (primeInt == 401)
+        {
+            ArtJazzExcited.SetActive(true);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(false);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Sweet! Practice is tomorrow after class in the band room!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene2Button.SetActive(true);
+            nextButton.SetActive(false);
+
+
+        }
+        else if (primeInt == 500)
+        {
+            ArtJazzExcited.SetActive(false);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Mr. Meep";
+            Char2speech.text = "I am insulted! Not everything has to be rowdy to be fun you know! Kids these days… I will not be joining your little hair band! Good luck to you.";
+            NextScene1Button.SetActive(true);
+            nextButton.SetActive(false);
+
+
+        }
+        else if (primeInt == 600)
+        {
+            ArtJazzExcited.SetActive(false);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Mr. Meep";
+            Char2speech.text = "Well, alright, if you’re sure you won’t get too crazy. I’ll join your band!";
+            NextScene1Button.SetActive(false);
+            nextButton.SetActive(true);
+            Choice3a.SetActive(false);
+            Choice3b.SetActive(false);
+
+
+        }
+        else if (primeInt == 601)
+        {
+            ArtJazzExcited.SetActive(true);
+            ArtJazzTalking.SetActive(false);
+            ArtMeep.SetActive(false);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Sweet! Practice is tomorrow after class in the band room!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene1Button.SetActive(true);
+            nextButton.SetActive(false);
+        }
+
+        }
+
+        // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
+        public void Choice1cFunct()
     {
         ArtJazzExcited.SetActive(false);
         ArtJazzTalking.SetActive(false);
@@ -392,12 +497,14 @@ public class DialogueScene3a : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "Mr. Meep";
-        Char2speech.text = "Wonderful! Perhaps you were paying more attention than I thought. Well a deal is a deal. I’ll join your band!";
+        Char2speech.text = "Wonderful! Perhaps you were paying more attention than I thought. Before I agree to this, what kind of band are you planning on making?";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
-        nextButton.SetActive(true);
+        nextButton.SetActive(false);
+        Choice2a.SetActive(true);
+        Choice2b.SetActive(true);
         allowSpace = true;
     }
     public void Choice1bFunct()
@@ -416,9 +523,9 @@ public class DialogueScene3a : MonoBehaviour
         Choice1c.SetActive(false);
         nextButton.SetActive(false);
         allowSpace = true;
-        NextScene2Button.SetActive(true);
+        NextScene1Button.SetActive(true);
     }
-    public void Choice1cFunct()
+    public void Choice1aFunct()
     {
         ArtJazzExcited.SetActive(false);
         ArtJazzTalking.SetActive(false);
@@ -434,7 +541,93 @@ public class DialogueScene3a : MonoBehaviour
         Choice1c.SetActive(false);
         nextButton.SetActive(false);
         allowSpace = true;
-        NextScene2Button.SetActive(true);
+        NextScene1Button.SetActive(true);
+    }
+    public void Choice2aFunct()
+    {
+        ArtJazzExcited.SetActive(true);
+        ArtJazzTalking.SetActive(false);
+        ArtJazzSad.SetActive(false);
+        ArtMeep.SetActive(false);
+        Char1name.text = "Jazz";
+        Char1speech.text = "Rock and Roll!!! Our band is gonna shred to the high heavens! The audience won’t know what hit them!!!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 299;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(true);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        allowSpace = true;
+
+
+
+
+    }
+    public void Choice2bFunct()
+    {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(false);
+        ArtJazzTalking.SetActive(true);
+        ArtMeep.SetActive(false);
+        Char1name.text = "Jazz";
+        Char1speech.text = "Hmm… We aren’t sure yet. Something relaxed and fun for all of us!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 399;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(true);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        allowSpace = true;
+    }
+    public void Choice3aFunct()
+    {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(true);
+        ArtJazzSad.SetActive(false);
+        ArtMeep.SetActive(false);
+        Char1name.text = "Jazz";
+        Char1speech.text = "Come on! I know those old feathers still have some fun left in them!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 499;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(true);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        allowSpace = true;
+    }
+    public void Choice3bFunct()
+    {
+        ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(true);
+        ArtJazzSad.SetActive(false);
+        ArtMeep.SetActive(false);
+        Char1name.text = "Jazz";
+        Char1speech.text = "Well, maybe we can tone it down a bit for you, but we still wanna have fun!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 599;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(true);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        allowSpace = true;
+
+
     }
     public void SceneChange2a()
     {
