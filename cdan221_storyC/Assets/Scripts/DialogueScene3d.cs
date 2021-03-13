@@ -34,7 +34,7 @@ public class DialogueScene3d : MonoBehaviour{
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public GameObject gameHandler;
+		public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -304,6 +304,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Sorry bud I will have to decline your offer :'3";
 				Char3name.text = "";
 				Char3speech.text = "";
+				gameHandlerObj.UpdateK4t(false);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -319,6 +320,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "OHHHHHHhhhHHhHH yUUMM!!";
 				Char3name.text = "";
 				Char3speech.text = "";
+				gameHandlerObj.UpdateK4t(true);
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);

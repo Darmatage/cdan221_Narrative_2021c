@@ -377,7 +377,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Awww! Please K4T, we need your killer keyboard skills to rock this show!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				gameHandlerObj.UpdateK4t(false);
+				gameHandlerObj.UpdateK4t(true);
                 primeInt = 299;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);

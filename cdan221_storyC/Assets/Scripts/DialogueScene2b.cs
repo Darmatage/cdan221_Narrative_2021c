@@ -27,7 +27,7 @@ public class DialogueScene2b : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
-    //public GameObject gameHandler;
+    public GameHandler gameHandlerObj;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -407,7 +407,8 @@ public class DialogueScene2b : MonoBehaviour
         Char1speech.text = "";
         Char2name.text = "Mr. Meep";
         Char2speech.text = "Wonderful! Perhaps you were paying more attention than I thought. Well a deal is a deal. I’ll join your band!";
-        primeInt = 99;
+        gameHandlerObj.UpdateMeep(true);
+		primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
@@ -424,7 +425,8 @@ public class DialogueScene2b : MonoBehaviour
         Char1speech.text = "";
         Char2name.text = "Mr. Meep";
         Char2speech.text = "I’m afraid that is incorrect. I will not be joining your band. Pay more attention to your studies!";
-        primeInt = 199;
+        gameHandlerObj.UpdateMeep(false);
+		primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
@@ -443,6 +445,7 @@ public class DialogueScene2b : MonoBehaviour
         Char2name.text = "Mr. Meep";
         Char2speech.text = "I’m afraid that is incorrect. I will not be joining your band. Pay more attention to your studies!";
         primeInt = 199;
+		gameHandlerObj.UpdateMeep(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);

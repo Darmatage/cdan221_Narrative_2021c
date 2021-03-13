@@ -30,7 +30,7 @@ public class DialogueScene3b : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
-    //public GameObject gameHandler;
+    public GameHandler gameHandlerObj;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -331,6 +331,7 @@ public class DialogueScene3b : MonoBehaviour
         Char1speech.text = "Rock and Roll!!! Our band is gonna shred to the high heavens! The audience won’t know what hit them!!!";
         Char2name.text = "";
         Char2speech.text = "";
+		gameHandlerObj.UpdateMeep(false);
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -347,6 +348,7 @@ public class DialogueScene3b : MonoBehaviour
         Char1speech.text = "Hmm… We aren’t sure yet. Something relaxed and fun for all of us!";
         Char2name.text = "";
         Char2speech.text = "";
+		gameHandlerObj.UpdateMeep(true);
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -367,7 +369,8 @@ public class DialogueScene3b : MonoBehaviour
         Char1speech.text = "";
         Char2name.text = "Jazz";
         Char2speech.text = "Come on! I know those old feathers still have some fun left in them!";
-        primeInt = 299;
+        gameHandlerObj.UpdateMeep(false);
+		primeInt = 299;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -387,6 +390,7 @@ public class DialogueScene3b : MonoBehaviour
         Char1speech.text = "Well, maybe we can tone it down a bit for you, but we still wanna have fun!";
         Char2name.text = "";
         Char2speech.text = "";
+		gameHandlerObj.UpdateMeep(true);
         primeInt = 399;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
