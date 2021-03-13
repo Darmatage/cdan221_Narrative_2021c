@@ -138,7 +138,7 @@ public void talking(){         // main story function. Players hit next to progr
 		else if (primeInt == 9){
 				dialogue.SetActive(true);
 				Char1name.text = "Jazz";
-                Char1speech.text = "WE ON FIRST PLACE!!";
+                Char1speech.text = "WE WON FIRST PLACE!!";
 		}
 		else if (primeInt == 10){
 				dialogue.SetActive(false);
