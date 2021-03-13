@@ -29,7 +29,7 @@ public class DialogueScene2a : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public GameObject gameHandler;
+        public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -263,6 +263,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "K4t";
                 Char2speech.text = "OHHHHHHhhhHHhHH YUUMM YUM !!";
                 primeInt = 99;
+				gameHandlerObj.UpdateK4t(true);
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
@@ -279,6 +280,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "K4t";
                 Char2speech.text = "Sorry bud but I will have to decline your offer :’3";
                 primeInt = 199;
+				gameHandlerObj.UpdateK4t(false);
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);

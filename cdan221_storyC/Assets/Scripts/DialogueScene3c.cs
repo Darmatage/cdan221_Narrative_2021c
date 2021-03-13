@@ -387,6 +387,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
+		
     public void Choice2bFunct()
     {
         ArtJazzExcited.SetActive(false);
