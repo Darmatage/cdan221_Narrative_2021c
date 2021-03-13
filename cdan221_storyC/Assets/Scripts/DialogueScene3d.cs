@@ -254,7 +254,8 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "";
 			    nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);	
+                NextScene1Button.SetActive(true);
+                nextButton.SetActive(false);
         }
 
 
@@ -335,7 +336,7 @@ public void talking(){         // main story function. Players hit next to progr
 				NextScene2Button.SetActive(true);
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
-                nextButton.SetActive(true);
+                nextButton.SetActive(false);
                 allowSpace = true;
         }
         public void Choice2bFunct(){
@@ -351,7 +352,7 @@ public void talking(){         // main story function. Players hit next to progr
 				NextScene1Button.SetActive(true);
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
-                nextButton.SetActive(true);
+                nextButton.SetActive(false);
                 allowSpace = true;
         }
         public void SceneChange2a(){

@@ -256,6 +256,7 @@ public class DialogueScene5b : MonoBehaviour
     public void Choice1bFunct()
     {
         ArtJazzExcited.SetActive(false);
+        ArtJazzTalking.SetActive(false);
         ArtJazzSad.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "";
@@ -270,11 +271,11 @@ public class DialogueScene5b : MonoBehaviour
     }
     public void SceneChange2a()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("SceneWin");
     }
     public void SceneChange2b()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("SceneWin");
     }
 }
 
