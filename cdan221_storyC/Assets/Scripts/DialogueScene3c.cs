@@ -297,6 +297,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char1speech.text = "";
             Char2name.text = "K4t";
             Char2speech.text = "Okay I’ll join, but you better find me some better snacks!";
+			gameHandlerObj.UpdateK4t(true);
             nextButton.SetActive(false);
             NextScene2Button.SetActive(true);
         }
@@ -310,6 +311,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char1speech.text = "";
             Char2name.text = "K4t";
             Char2speech.text = "Yuck! No thanks";
+			gameHandlerObj.UpdateK4t(false);
             nextButton.SetActive(true);
             NextScene2Button.SetActive(false);
         }
@@ -377,7 +379,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Awww! Please K4T, we need your killer keyboard skills to rock this show!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				gameHandlerObj.UpdateK4t(true);
                 primeInt = 299;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -398,7 +399,6 @@ public void talking(){         // main story function. Players hit next to progr
         Char1speech.text = "What if I give you some kibble?";
         Char2name.text = "";
         Char2speech.text = "";
-        gameHandlerObj.UpdateK4t(false);
         primeInt = 399;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
