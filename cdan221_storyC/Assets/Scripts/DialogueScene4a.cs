@@ -17,9 +17,12 @@ public class DialogueScene4a : MonoBehaviour {
         public Text Char4speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
-		public GameObject ArtChar2;
+        public GameObject ArtJazzExcited;
+        public GameObject ArtJazzSad;
+        public GameObject ArtChar2;
 		public GameObject ArtChar3;
 		public GameObject ArtChar4;
+        public GameObject ArtMeepGuitar;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -33,9 +36,12 @@ public class DialogueScene4a : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
-		ArtChar2.SetActive(false);
-		ArtChar3.SetActive(false);
-		ArtChar4.SetActive(false);
+        ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(false);
+        ArtChar2.SetActive(false);
+        ArtChar3.SetActive(false);
+        ArtChar4.SetActive(false);
+        ArtMeepGuitar.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -76,10 +82,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             dialogue.SetActive(true);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! Are you ready to rock and roll??";
@@ -92,10 +101,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 3)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -105,9 +117,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 4)
         {
-            ArtChar2.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -117,7 +133,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 5)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
             ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -126,11 +148,16 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
             Char4name.text = "";
             Char4speech.text = "";
-
-            //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Just let me get the mic all set up and then we can start.";
             Char2name.text = "";
@@ -140,6 +167,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 7)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -147,6 +181,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 8)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre are we thinking?";
             Char2name.text = "";
@@ -154,6 +195,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 9)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -163,6 +211,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 10)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -174,6 +229,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 11)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -183,8 +245,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 12)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "That seems to tick all the boxes!";
+            Char1speech.text = "That seems to tick all the boxes! K4t? Mr. Meep? What do you think?";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -192,15 +261,29 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 13)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "K4t";
-            Char3speech.text = "Ooooo! That’s a cool idea.";
+            Char3speech.text = "Ooooo! I love it.";
         }
         else if (primeInt == 14)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -212,8 +295,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 15)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "Let's do it!";
+            Char1speech.text = "Then let's do it!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -224,7 +314,14 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 16)
         {
-            Char1name.text = "Jazz";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
             Char1speech.text = "The group plays their song";
             Char2name.text = "";
             Char2speech.text = "";
@@ -236,6 +333,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 17)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -248,6 +352,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 18)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -260,6 +371,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 19)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -272,8 +390,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 20)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
+            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think with the four of us, there's no way we could lose!!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -288,10 +413,13 @@ public void talking(){         // main story function. Players hit next to progr
         // here are the primeInts for only Mr Meep:
         else if (primeInt == 25)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             dialogue.SetActive(true);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! Are you ready to rock and roll??";
@@ -304,22 +432,28 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 26)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
             Char2speech.text = "Heck yeah man!";
 
-            //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 27)
         {
-            ArtChar2.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -330,22 +464,45 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 28)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "Just let me get the mic all set up and then we can start.";
+            Char1speech.text = "It's too bad it didn't work out with K4t. She doesn't know what she's missing.";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
         else if (primeInt == 29)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
-            Char2speech.text = "We should decide on a song to blast.";
+            Char2speech.text = "Yeah, but we don't need her! We should decide on a song to blast.";
         }
         else if (primeInt == 30)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre are we thinking?";
             Char2name.text = "";
@@ -353,6 +510,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 31)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -362,24 +526,49 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 32)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
             Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
             Char3name.text = "";
             Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
         else if (primeInt == 33)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "That seems to tick all the boxes!";
+            Char1speech.text = "I like that! What do you think Mr. Meep?";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
         else if (primeInt == 34)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -391,6 +580,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 35)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Let's do it!";
             Char2name.text = "";
@@ -403,7 +599,14 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 36)
         {
-            Char1name.text = "Jazz";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
             Char1speech.text = "The group plays their song";
             Char2name.text = "";
             Char2speech.text = "";
@@ -415,6 +618,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 37)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -427,6 +637,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 38)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -439,8 +656,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 39)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
+            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think the three of us still have a chance here!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -456,11 +680,13 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 50)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
-            dialogue.SetActive(true);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! Are you ready to rock and roll??";
             Char2name.text = "";
@@ -472,19 +698,27 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 51)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
             Char2speech.text = "Heck yeah man!";
         }
-
-        //gameHandler.AddPlayerStat(1);
         else if (primeInt == 52)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             ArtChar3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -499,8 +733,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 53)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "Just let me get the mic all set up and then we can start.";
+            Char1speech.text = "Just let me get the mic all set up and then we can start. It's too bad Mr. Meep didn't join us.";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -508,20 +749,45 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 54)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
-            Char2speech.text = "We should decide on a song to blast.";
+            Char2speech.text = "Who needs a grumpy old teacher anyway? We should decide on a song to blast.";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 55)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre are we thinking?";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 56)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -533,6 +799,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 57)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -542,8 +815,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 58)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "That seems to tick all the boxes!";
+            Char1speech.text = "That's rad! What do you think K4t?";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -551,17 +831,31 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 59)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "K4t";
-            Char3speech.text = "Ooooo! That’s a cool idea.";
+            Char3speech.text = "Ooooo! I love it!";
         }
         else if (primeInt == 60)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "Let's do it!";
+            Char1speech.text = "Then let's do it!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -572,7 +866,14 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 61)
         {
-            Char1name.text = "Jazz";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
             Char1speech.text = "The group plays their song";
             Char2name.text = "";
             Char2speech.text = "";
@@ -584,6 +885,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 62)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -596,6 +904,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 63)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(true);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -608,8 +923,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 64)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
+            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think the three of us still have a chance here!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -625,10 +947,13 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 75)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             dialogue.SetActive(true);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! Are you ready to rock and roll??";
@@ -641,10 +966,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 76)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -654,6 +982,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 77)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I'm sorry I couldn't get Mr. Meep or K4t to join us...";
             Char2name.text = "";
@@ -663,6 +998,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 78)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -672,6 +1014,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 79)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "You're right!";
             Char2name.text = "";
@@ -681,6 +1030,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 80)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -688,6 +1044,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 81)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre are we thinking?";
             Char2name.text = "";
@@ -695,6 +1058,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 82)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -704,6 +1074,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 83)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Sure! We have nothing else to go on.";
             Char2name.text = "";
@@ -713,7 +1090,14 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 84)
         {
-            Char1name.text = "Jazz";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
             Char1speech.text = "The two play their song";
             Char2name.text = "";
             Char2speech.text = "";
@@ -725,6 +1109,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 85)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -737,6 +1128,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 86)
         {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off since it's just the two of us.";
             Char2name.text = "";
