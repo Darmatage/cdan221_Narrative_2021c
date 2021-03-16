@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 236725190}
   - component: {fileID: 236725189}
   m_Layer: 5
-  m_Name: DialongDisplay
+  m_Name: DialogueDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
