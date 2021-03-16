@@ -70,142 +70,157 @@ void FixedUpdate(){         // use spacebar as Next button
 
 public void talking(){         // main story function. Players hit next to progress to next int
         primeInt = primeInt + 1;
-        if (primeInt == 1){
-                // AudioSource.Play();
+        if (primeInt == 1)
+        {
+            // AudioSource.Play();
         }
-        else if (primeInt == 2){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-				dialogue.SetActive(true);
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hey! Are you ready to rock and roll??";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
+        else if (primeInt == 2)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            dialogue.SetActive(true);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hey! Are you ready to rock and roll??";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-       else if (primeInt ==3){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Heck yeah man!";
-				
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 3)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Heck yeah man!";
+
+            //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char4name.text = "Mr. Meep";
-                Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
+        else if (primeInt == 4)
+        {
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
         }
-       else if (primeInt == 5){
-				ArtChar3.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
-				Char4name.text = "";
-                Char4speech.text = "";
-     
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 5)
+        {
+            ArtChar3.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
+            Char4name.text = "";
+            Char4speech.text = "";
+
+            //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 6){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Just let me get the mic all set up and then we can start.";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 6)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Just let me get the mic all set up and then we can start.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "We should decide on a song to blast.";
+        else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "We should decide on a song to blast.";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hmmm… what genre are we thinking?";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 8)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hmmm… what genre are we thinking?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-		 else if (primeInt == 9){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "Something smooth and nostalgic…";
+        else if (primeInt == 9)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "Something smooth and nostalgic…";
         }
-		 else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Something that will knock the socks off the audience!";
-				Char4name.text = "";
-                Char4speech.text = "";
+        else if (primeInt == 10)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "Something that will knock the socks off the audience!";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-		 else if (primeInt == 11){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 11)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 12){
-                Char1name.text = "Jazz";
-                Char1speech.text = "That seems to tick all the boxes!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 12)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "That seems to tick all the boxes!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 13){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Ooooo! That’s a cool idea.";
+        else if (primeInt == 13)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "Ooooo! That’s a cool idea.";
         }
-		 else if (primeInt == 14){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "I could work with that.";
+        else if (primeInt == 14)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "I could work with that.";
         }
-		 else if (primeInt == 15){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Let's do it!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				
+        else if (primeInt == 15)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Let's do it!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+
         }
         else if (primeInt == 16)
         {
@@ -270,142 +285,123 @@ public void talking(){         // main story function. Players hit next to progr
 
         }
 
-// here are the primeInts for only Mr Meep:
-else if (primeInt == 2){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-				dialogue.SetActive(true);
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hey! Are you ready to rock and roll??";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
+        // here are the primeInts for only Mr Meep:
+        else if (primeInt == 25)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            dialogue.SetActive(true);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hey! Are you ready to rock and roll??";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-       else if (primeInt ==3){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Heck yeah man!";
-				
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 26)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Heck yeah man!";
+
+            //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char4name.text = "Mr. Meep";
-                Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
+        else if (primeInt == 27)
+        {
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
         }
-       else if (primeInt == 5){
-				ArtChar3.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
-				Char4name.text = "";
-                Char4speech.text = "";
-     
-                //gameHandler.AddPlayerStat(1);
+
+        else if (primeInt == 28)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Just let me get the mic all set up and then we can start.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-       else if (primeInt == 6){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Just let me get the mic all set up and then we can start.";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 29)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "We should decide on a song to blast.";
         }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "We should decide on a song to blast.";
+        else if (primeInt == 30)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hmmm… what genre are we thinking?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hmmm… what genre are we thinking?";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 31)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "Something smooth and nostalgic…";
         }
-		 else if (primeInt == 9){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "Something smooth and nostalgic…";
+        else if (primeInt == 32)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Something that will knock the socks off the audience!";
-				Char4name.text = "";
-                Char4speech.text = "";
+        else if (primeInt == 33)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "That seems to tick all the boxes!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 11){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 34)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "Mr. Meep";
+            Char4speech.text = "I could work with that.";
         }
-		 else if (primeInt == 12){
-                Char1name.text = "Jazz";
-                Char1speech.text = "That seems to tick all the boxes!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 35)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Let's do it!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+
         }
-		 else if (primeInt == 13){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Ooooo! That’s a cool idea.";
-        }
-		 else if (primeInt == 14){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "I could work with that.";
-        }
-		 else if (primeInt == 15){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Let's do it!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				
-        }
-        else if (primeInt == 16)
+        else if (primeInt == 36)
         {
             Char1name.text = "Jazz";
             Char1speech.text = "The group plays their song";
@@ -417,7 +413,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 17)
+        else if (primeInt == 37)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -429,7 +425,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 18)
+        else if (primeInt == 38)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -441,19 +437,7 @@ else if (primeInt == 2){
             Char4speech.text = "I’ve played with many bands in the past, and I have to say, we sounded pretty good. Looks like I still got it in me after all these years.";
 
         }
-        else if (primeInt == 19)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "K4t";
-            Char3speech.text = "Yeah! That was awesome!";
-            Char4name.text = "";
-            Char4speech.text = "";
-
-        }
-        else if (primeInt == 20)
+        else if (primeInt == 39)
         {
             Char1name.text = "Jazz";
             Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
@@ -467,144 +451,126 @@ else if (primeInt == 2){
             nextButton.SetActive(false);
 
         }
-		
-// here are the primeInts for just K4t:
 
-else if (primeInt == 2){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-				dialogue.SetActive(true);
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hey! Are you ready to rock and roll??";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
+        // here are the primeInts for just K4t:
+
+        else if (primeInt == 50)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            dialogue.SetActive(true);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hey! Are you ready to rock and roll??";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-       else if (primeInt ==3){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Heck yeah man!";
-				
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 51)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Heck yeah man!";
         }
-       else if (primeInt == 4){
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char4name.text = "Mr. Meep";
-                Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
+
+        //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 52)
+        {
+            ArtChar3.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
+            Char4name.text = "";
+            Char4speech.text = "";
+
+            //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 5){
-				ArtChar3.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
-				Char4name.text = "";
-                Char4speech.text = "";
-     
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 53)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Just let me get the mic all set up and then we can start.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-       else if (primeInt == 6){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Just let me get the mic all set up and then we can start.";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 54)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "We should decide on a song to blast.";
         }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "We should decide on a song to blast.";
+        else if (primeInt == 55)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hmmm… what genre are we thinking?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hmmm… what genre are we thinking?";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 56)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "Something that will knock the socks off the audience!";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-		 else if (primeInt == 9){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "Something smooth and nostalgic…";
+        else if (primeInt == 57)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Something that will knock the socks off the audience!";
-				Char4name.text = "";
-                Char4speech.text = "";
+        else if (primeInt == 58)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "That seems to tick all the boxes!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
-		 else if (primeInt == 11){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 59)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "K4t";
+            Char3speech.text = "Ooooo! That’s a cool idea.";
         }
-		 else if (primeInt == 12){
-                Char1name.text = "Jazz";
-                Char1speech.text = "That seems to tick all the boxes!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 60)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Let's do it!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+
         }
-		 else if (primeInt == 13){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Ooooo! That’s a cool idea.";
-        }
-		 else if (primeInt == 14){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "I could work with that.";
-        }
-		 else if (primeInt == 15){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Let's do it!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				
-        }
-        else if (primeInt == 16)
+        else if (primeInt == 61)
         {
             Char1name.text = "Jazz";
             Char1speech.text = "The group plays their song";
@@ -616,7 +582,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 17)
+        else if (primeInt == 62)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -628,19 +594,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 18)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            Char4name.text = "Mr. Meep";
-            Char4speech.text = "I’ve played with many bands in the past, and I have to say, we sounded pretty good. Looks like I still got it in me after all these years.";
-
-        }
-        else if (primeInt == 19)
+        else if (primeInt == 63)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -652,7 +606,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 20)
+        else if (primeInt == 64)
         {
             Char1name.text = "Jazz";
             Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
@@ -666,147 +620,101 @@ else if (primeInt == 2){
             nextButton.SetActive(false);
 
         }
-		
-//here are the primeInts for nobody:
 
-else if (primeInt == 2){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-				dialogue.SetActive(true);
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hey! Are you ready to rock and roll??";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
+        //here are the primeInts for nobody:
+
+        else if (primeInt == 75)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            dialogue.SetActive(true);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hey! Are you ready to rock and roll??";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
         }
-       else if (primeInt ==3){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Heck yeah man!";
-				
-                //gameHandler.AddPlayerStat(1);
+        else if (primeInt == 76)
+        {
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Heck yeah man!";
+
+            //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
-				ArtChar2.SetActive(true);
-				ArtChar3.SetActive(false);
-				ArtChar4.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char4name.text = "Mr. Meep";
-                Char4speech.text = "I’m not sure about this rocking and rolling you speak of, but I am surely excited to dust off my old guitar.";
-        }
-       else if (primeInt == 5){
-				ArtChar3.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "I ate all the snacks Eddy brought already, so I’m ready to go!";
-				Char4name.text = "";
-                Char4speech.text = "";
-     
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 6){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Just let me get the mic all set up and then we can start.";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "We should decide on a song to blast.";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Hmmm… what genre are we thinking?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-		 else if (primeInt == 9){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "Something smooth and nostalgic…";
-        }
-		 else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Something that will knock the socks off the audience!";
-				Char4name.text = "";
-                Char4speech.text = "";
-        }
-		 else if (primeInt == 11){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Eddy";
-                Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
-				Char3name.text = "";
-                Char3speech.text = "";
-        }
-		 else if (primeInt == 12){
-                Char1name.text = "Jazz";
-                Char1speech.text = "That seems to tick all the boxes!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-        }
-		 else if (primeInt == 13){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "K4t";
-                Char3speech.text = "Ooooo! That’s a cool idea.";
-        }
-		 else if (primeInt == 14){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "Mr. Meep";
-                Char4speech.text = "I could work with that.";
-        }
-		 else if (primeInt == 15){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Let's do it!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				
-        }
-        else if (primeInt == 16)
+        else if (primeInt == 77)
         {
             Char1name.text = "Jazz";
-            Char1speech.text = "The group plays their song";
+            Char1speech.text = "I'm sorry I couldn't get Mr. Meep or K4t to join us...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 78)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "I guess it's fine. We will show them we didn't need them anyways!";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 79)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "You're right!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 80)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "We should decide on a song to blast.";
+        }
+        else if (primeInt == 81)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Hmmm… what genre are we thinking?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 82)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Not to play too much off your name, Jazz, but how about something jazzy? We could do a modern rock interpretation on a jazz song!";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 83)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Sure! We have nothing else to go on.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 84)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "The two play their song";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -815,7 +723,7 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 17)
+        else if (primeInt == 85)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -827,34 +735,10 @@ else if (primeInt == 2){
             Char4speech.text = "";
 
         }
-        else if (primeInt == 18)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "";
-            Char3speech.text = "";
-            Char4name.text = "Mr. Meep";
-            Char4speech.text = "I’ve played with many bands in the past, and I have to say, we sounded pretty good. Looks like I still got it in me after all these years.";
-
-        }
-        else if (primeInt == 19)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-            Char3name.text = "K4t";
-            Char3speech.text = "Yeah! That was awesome!";
-            Char4name.text = "";
-            Char4speech.text = "";
-
-        }
-        else if (primeInt == 20)
+        else if (primeInt == 86)
         {
             Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think we still have a chance here!";
+            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off since it's just the two of us.";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
@@ -864,7 +748,7 @@ else if (primeInt == 2){
             NextScene1Button.SetActive(true);
             nextButton.SetActive(false);
 
-        }		
+        }
 
 
 
@@ -872,30 +756,33 @@ else if (primeInt == 2){
 
 
         // ENCOUNTER AFTER CHOICE #1
-        else if (primeInt == 100){
-                Char1name.text = "Jazz";
-                Char1speech.text = "Okay!";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 100)
+        {
+            Char1name.text = "Jazz";
+            Char1speech.text = "Okay!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-		else if (primeInt == 101){
-				Char1name.text = "";
-				Char1speech.text = "";
-				Char2name.text = "";
-				Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);						
-		}
-		
-		else if (primeInt == 200){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
+        else if (primeInt == 101)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+        }
+
+        else if (primeInt == 200)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
         }
 	}
 	// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
