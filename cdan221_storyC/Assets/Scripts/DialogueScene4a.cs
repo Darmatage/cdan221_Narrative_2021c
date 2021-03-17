@@ -426,8 +426,8 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-			NextScene1Button.SetActive(true);
-			NextScene2Button.SetActive(true);
+			Choice1a.SetActive(true);
+			Choice1b.SetActive(true);
             NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
@@ -732,6 +732,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
+			dialogue.SetActive(true);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! Are you ready to rock and roll??";
             Char2name.text = "";
@@ -1002,8 +1003,6 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-			Choice1a.SetActive(true); //leads to chill rivals scenes
-			Choice1b.SetActive(true); //leads to agrresive rivals scenes
             NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
@@ -1244,14 +1243,8 @@ public void talking(){         // main story function. Players hit next to progr
 
 
         // ENCOUNTER AFTER CHOICE #1
+       
         else if (primeInt == 100)
-        {
-            Char1name.text = "Jazz";
-            Char1speech.text = "Okay!";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 101)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -1259,7 +1252,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
         }
 
         else if (primeInt == 200)
@@ -1270,7 +1263,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene2Button.SetActive(true);
+            NextScene1Button.SetActive(true);
         }
 	}
 	// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
@@ -1278,7 +1271,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
-			Char2speech.text = "";
+			Char2speech.text = "sounds cool Jazz";
 			primeInt = 99;
 			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
@@ -1289,7 +1282,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
-			Char2speech.text = "";
+			Char2speech.text = "Rock on!";
 			primeInt = 199;
 			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
@@ -1302,6 +1295,6 @@ public void talking(){         // main story function. Players hit next to progr
 		   SceneManager.LoadScene("Scene5a");
 	}
 	public void SceneChange2b(){
-			SceneManager.LoadScene("Scene2b");
+			SceneManager.LoadScene("Scene5b");
 	}
 }
