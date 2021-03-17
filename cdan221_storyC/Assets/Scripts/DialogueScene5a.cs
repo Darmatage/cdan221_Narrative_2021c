@@ -26,7 +26,7 @@ public class DialogueScene5a : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
-    //public GameObject gameHandler;
+    public GameHandler gameHandlerObj;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 

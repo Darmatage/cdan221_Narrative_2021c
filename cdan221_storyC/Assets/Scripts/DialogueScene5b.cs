@@ -26,7 +26,7 @@ public class DialogueScene5b : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
-    //public GameObject gameHandler;
+    public GameHandler gameHandlerObj;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -239,8 +239,9 @@ public class DialogueScene5b : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
     {
+        ArtJazzTalking.SetActive(false);
         ArtJazzExcited.SetActive(false);
-        ArtJazzTalking.SetActive(true);
+        ArtJazzSad.SetActive(true);
         ArtRivals.SetActive(true);
         Char1name.text = "Jazz";
         Char1speech.text = "*Sticks out tongue*";
