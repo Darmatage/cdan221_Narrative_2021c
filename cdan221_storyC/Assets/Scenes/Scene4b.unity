@@ -256,7 +256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Who will play the guitar
+  m_Text: Our team will kick butt!
 --- !u!222 &94389320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1236,7 +1236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " \u201CWhere should I go first?\u201D"
+  m_Text: We got this show for sure!
 --- !u!222 &548171153
 CanvasRenderer:
   m_ObjectHideFlags: 0

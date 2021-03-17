@@ -429,7 +429,28 @@ public class DialogueScene4b : MonoBehaviour
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+
+        }
+        else if (primeInt == 22)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Yeah Jazz!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
@@ -690,7 +711,27 @@ public class DialogueScene4b : MonoBehaviour
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+        }
+        else if (primeInt == 40)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Yeah Jazz!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
@@ -955,7 +996,28 @@ public class DialogueScene4b : MonoBehaviour
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+
+        }
+        else if (primeInt == 66)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Yeah Jazz!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
@@ -1178,7 +1240,28 @@ public class DialogueScene4b : MonoBehaviour
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+
+        }
+        else if (primeInt == 83)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Yeah Jazz!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
@@ -1190,20 +1273,13 @@ public class DialogueScene4b : MonoBehaviour
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
-            Char1name.text = "Jazz";
-            Char1speech.text = "Okay!";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 101)
-        {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
         }
 
         else if (primeInt == 200)
@@ -1214,13 +1290,9 @@ public class DialogueScene4b : MonoBehaviour
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene2Button.SetActive(true);
+            NextScene1Button.SetActive(true);
         }
     }
-
-
-
-
 
 
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
@@ -1229,7 +1301,7 @@ public class DialogueScene4b : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "Eddy";
-        Char2speech.text = "";
+        Char2speech.text = "Sounds cool, Jazz.";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -1241,7 +1313,7 @@ public class DialogueScene4b : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "Eddy";
-        Char2speech.text = "";
+        Char2speech.text = "Rock on!";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -1252,10 +1324,10 @@ public class DialogueScene4b : MonoBehaviour
 
     public void SceneChange2a()
     {
-        SceneManager.LoadScene("Scene5b");
+        SceneManager.LoadScene("Scene5a");
     }
     public void SceneChange2b()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene5b");
     }
 }
