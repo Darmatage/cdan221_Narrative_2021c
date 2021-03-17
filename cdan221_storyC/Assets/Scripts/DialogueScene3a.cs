@@ -371,24 +371,6 @@ public class DialogueScene3a : MonoBehaviour
             nextButton.SetActive(false);
         }
 
-
-        else if (primeInt == 200)
-        {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 201)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene2Button.SetActive(true);
-        }
         else if (primeInt == 300)
         {
 
@@ -438,7 +420,7 @@ public class DialogueScene3a : MonoBehaviour
             Char1speech.text = "Sweet! Practice is tomorrow after class in the band room!";
             Char2name.text = "";
             Char2speech.text = "";
-            NextScene2Button.SetActive(true);
+            NextScene1Button.SetActive(true);
             nextButton.SetActive(false);
 
 
@@ -452,7 +434,7 @@ public class DialogueScene3a : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Mr. Meep";
             Char2speech.text = "I am insulted! Not everything has to be rowdy to be fun you know! Kids these days… I will not be joining your little hair band! Good luck to you.";
-            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
             nextButton.SetActive(false);
 
 
@@ -482,7 +464,7 @@ public class DialogueScene3a : MonoBehaviour
             Char1speech.text = "Sweet! Practice is tomorrow after class in the band room!";
             Char2name.text = "";
             Char2speech.text = "";
-            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
             nextButton.SetActive(false);
         }
 
@@ -525,7 +507,7 @@ public class DialogueScene3a : MonoBehaviour
         Choice1c.SetActive(false);
         nextButton.SetActive(false);
         allowSpace = true;
-        NextScene1Button.SetActive(true);
+        NextScene2Button.SetActive(true);
     }
     public void Choice1aFunct()
     {
@@ -544,7 +526,7 @@ public class DialogueScene3a : MonoBehaviour
         Choice1c.SetActive(false);
         nextButton.SetActive(false);
         allowSpace = true;
-        NextScene1Button.SetActive(true);
+        NextScene2Button.SetActive(true);
     }
     public void Choice2aFunct()
     {

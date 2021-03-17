@@ -695,19 +695,19 @@ public void talking(){         // main story function. Players hit next to progr
             Char4name.text = "";
             Char4speech.text = "";
 
-        }  else if (primeInt == 39)
+        }  else if (primeInt == 40)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
-            Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think the three of us still have a chance here!";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "Yeah!";
             Char3name.text = "";
             Char3speech.text = "";
             Char4name.text = "";
