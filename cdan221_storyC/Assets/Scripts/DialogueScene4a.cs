@@ -49,10 +49,10 @@ void Start(){         // initial visibility settings
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
 		
-		// got Meep and K4t = primeInt 2-20
+		// got Meep and K4t = primeInt 2-21
 		// got just Meep = primeInt 25-45
 		// got just K4t = primeInt 50-70 
-		// got nobody = primeInt 75-95
+		// got nobody = primeInt 75-96
 		
 		if ((gameHandlerObj.WhatIsMeep()== true )&&(gameHandlerObj.WhatIsK4t()== false )){
 					primeInt = 24;
@@ -397,15 +397,38 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think with the four of us, there's no way we could lose!!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+            NextScene1Button.SetActive(true);
+            nextButton.SetActive(false);
+
+        }
+        else if (primeInt == 21)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
-            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think with the four of us, there's no way we could lose!!";
+            Char1speech.text = "Yeah Eddy!";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+			NextScene1Button.SetActive(true);
+			NextScene2Button.SetActive(true);
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
@@ -674,6 +697,28 @@ public void talking(){         // main story function. Players hit next to progr
             NextScene1Button.SetActive(true);
             nextButton.SetActive(false);
 
+        }  else if (primeInt == 39)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "Jazz";
+            Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think the three of us still have a chance here!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+			Choice1a.SetActive(true); // function Choice1aFunct()
+            Choice1b.SetActive(true);
+            NextScene1Button.SetActive(false);
+            nextButton.SetActive(false);
+
         }
 
         // here are the primeInts for just K4t:
@@ -937,12 +982,55 @@ public void talking(){         // main story function. Players hit next to progr
             Char3name.text = "";
             Char3speech.text = "";
             Char4name.text = "";
+            Char4speech.text = "";       
+        }
+		
+		  else if (primeInt == 65)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Eddy";
+            Char2speech.text = "We Make a great team!";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+			Choice1a.SetActive(true); //leads to chill rivals scenes
+			Choice1b.SetActive(true); //leads to agrresive rivals scenes
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
+		  else if (primeInt == 66)
+        {
+            ArtChar1.SetActive(true);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "Jazz";
+            Char1speech.text = "Yeah Eddy!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            Char4name.text = "";
+            Char4speech.text = "";
+			Choice1a.SetActive(true); //leads to chill rivals scenes
+			Choice1b.SetActive(true); //leads to agrresive rivals scenes
+            NextScene1Button.SetActive(false);
+            nextButton.SetActive(false);
 
+        }
         //here are the primeInts for nobody:
 
         else if (primeInt == 75)
@@ -1143,7 +1231,9 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
+			Choice1a.SetActive(true); //leads to chill rivals scenes
+			Choice1b.SetActive(true); //leads to agrresive rivals scenes
+            NextScene1Button.SetActive(false);
             nextButton.SetActive(false);
 
         }
