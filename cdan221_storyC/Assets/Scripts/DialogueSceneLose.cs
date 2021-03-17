@@ -84,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtJazzSad.SetActive(true);
 				ArtEddy.SetActive(true);
 				dialogue.SetActive(true);
+				bandInventory.SetActive(true);
                 Char1name.text = "Jazz";
                 Char1speech.text = "Today is the Talent Show. . .";
                 Char2name.text = "";
@@ -145,9 +146,9 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtBG1.SetActive(false);
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
+				bandInventory.SetActive(false);
 		}
 		else if (primeInt == 10){
-				dialogue.SetActive(false);
 				ArtBG1.SetActive(true);
 				placement.SetActive(true);
 				placementWin.text = "YOU WON 3ND PLACE!!";
@@ -165,6 +166,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtEddy.SetActive(true);
 				ArtK4t.SetActive(true);
 				dialogue.SetActive(true);
+				bandInventory.SetActive(true);
                 Char1name.text = "Jazz";
                 Char1speech.text = "Today is the Talent Show. . .";
                 Char2name.text = "";
@@ -242,9 +244,9 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtBG1.SetActive(false);
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
+				bandInventory.SetActive(false);
 		}
 		else if (primeInt == 20){
-				dialogue.SetActive(false);
 				ArtBG1.SetActive(true);
 				placement.SetActive(true);
 				placementWin.text = "YOU WON 2ND PLACE!!";
@@ -261,6 +263,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtJazzSad.SetActive(true);
 				ArtEddy.SetActive(true);
 				ArtChar4.SetActive(true);
+				bandInventory.SetActive(true);
 				dialogue.SetActive(true);
                 Char1name.text = "Jazz";
                 Char1speech.text = "Today is the Talent Show. . .";
@@ -335,9 +338,9 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtBG1.SetActive(false);
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
+				bandInventory.SetActive(false);
 		}
 		else if (primeInt == 30){
-				dialogue.SetActive(false);
 				ArtBG1.SetActive(true);
 				placement.SetActive(true);
 				placementWin.text = "YOU WON 2ND PLACE!!";

@@ -694,8 +694,6 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
-            nextButton.SetActive(false);
 
         }  else if (primeInt == 39)
         {
@@ -1003,8 +1001,6 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(false);
-            nextButton.SetActive(false);
 
         }
 		  else if (primeInt == 66)
