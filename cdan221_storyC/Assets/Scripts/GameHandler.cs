@@ -89,6 +89,8 @@ public class GameHandler : MonoBehaviour{
 
         public void RestartGame(){
                 Time.timeScale = 1f;
+				gotK4t = false;
+				gotMeep = false;
                 //restart the game:
                 //SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 SceneManager.LoadScene ("MainMenu");
