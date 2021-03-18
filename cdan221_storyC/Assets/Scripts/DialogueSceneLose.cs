@@ -35,6 +35,11 @@ public class DialogueSceneLose : MonoBehaviour {
         public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		
+		
+		public GameObject audioMeep;
+		public GameObject audioK4t;
+		public GameObject audioNone;
 
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
@@ -54,6 +59,11 @@ void Start(){         // initial visibility settings
 		replayButton.SetActive(false);
 		quitButton.SetActive(false);
 		
+		
+		audioMeep.SetActive(false);
+		audioK4t.SetActive(false);
+		audioNone.SetActive(false);
+		
 		// got nobody = primeInt 2-10		
 		// got just K4t = primeInt 12-20
 		// got just Meep = primeInt  22-30
@@ -61,9 +71,14 @@ void Start(){         // initial visibility settings
 		
 		if ((gameHandlerObj.WhatIsMeep()== false )&&(gameHandlerObj.WhatIsK4t()== true )){
 					primeInt = 11; //got k4t
+					audioK4t.SetActive(true);
 				}
 		else if ((gameHandlerObj.WhatIsMeep()== true )&&(gameHandlerObj.WhatIsK4t()== false )){
 					primeInt = 21; //got meep
+					audioMeep.SetActive(true);
+				}
+		else if ((gameHandlerObj.WhatIsMeep()== false )&&(gameHandlerObj.WhatIsK4t()== false )){
+					audioNone.SetActive(true);
 				}
 }
 
@@ -348,6 +363,7 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 		else if (primeInt == 29){
 				ArtBG1.SetActive(false);
+				StartCoroutine(FadeIn(ArtBGWhite));
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
 				bandInventory.SetActive(false);
@@ -363,4 +379,29 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 
 	}
+	
+	
+	
+	  IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+	
 }

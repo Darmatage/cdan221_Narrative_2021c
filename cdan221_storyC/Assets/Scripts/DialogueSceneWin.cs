@@ -132,6 +132,7 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 		else if (primeInt == 8){
 				ArtBG1.SetActive(false);
+				StartCoroutine(FadeIn(ArtBGWhite));
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
 		}
@@ -142,7 +143,8 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 		else if (primeInt == 10){
 				dialogue.SetActive(false);
-				ArtBGWhite.SetActive(false);
+				StartCoroutine(FadeOut(ArtBGWhite));
+				// ArtBGWhite.SetActive(false);
 				ArtBG2.SetActive(true);
 				nextButton.SetActive(false);
 				allowSpace = false;
@@ -150,4 +152,29 @@ public void talking(){         // main story function. Players hit next to progr
 				quitButton.SetActive(true);
 		}
 	}
+	
+	
+	
+	IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+	
 }
