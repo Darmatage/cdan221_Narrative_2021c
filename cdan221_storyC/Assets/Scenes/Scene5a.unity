@@ -661,7 +661,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 532029992}
-        m_MethodName: Choice1aFunct
+        m_MethodName: Choice2aFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 532029992}
-        m_MethodName: Choice1bFunct
+        m_MethodName: Choice2bFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
