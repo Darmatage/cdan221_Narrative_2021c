@@ -967,7 +967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: next
+  m_Text: NEXT
 --- !u!222 &628374846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2154,6 +2154,7 @@ MonoBehaviour:
   NextScene1Button: {fileID: 170113406}
   NextScene2Button: {fileID: 1702249936}
   nextButton: {fileID: 301700263}
+  gameHandlerObj: {fileID: 2041760574}
 --- !u!1 &1585010087
 GameObject:
   m_ObjectHideFlags: 0

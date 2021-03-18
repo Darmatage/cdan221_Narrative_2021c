@@ -28,6 +28,7 @@ public class DialogueSceneWin : MonoBehaviour {
         public GameObject nextButton;
 		public GameObject replayButton;
 		public GameObject quitButton;
+		public GameObject bandInventory;
         public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -46,6 +47,7 @@ void Start(){         // initial visibility settings
         nextButton.SetActive(true);
 		replayButton.SetActive(false);
 		quitButton.SetActive(false);
+		bandInventory.SetActive(false);
 }
 
 void FixedUpdate(){         // use spacebar as Next button
@@ -66,6 +68,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtChar2.SetActive(true);
 				ArtK4t.SetActive(true);
 				ArtChar4.SetActive(true);
+				bandInventory.SetActive(true);
 				dialogue.SetActive(true);
                 Char1name.text = "Jazz";
                 Char1speech.text = "Today is the Talent Show. . .";
@@ -135,6 +138,7 @@ public void talking(){         // main story function. Players hit next to progr
 				StartCoroutine(FadeIn(ArtBGWhite));
 				ArtBGWhite.SetActive(true);
 				dialogue.SetActive(false);
+				bandInventory.SetActive(false);
 		}
 		else if (primeInt == 9){
 				dialogue.SetActive(true);
