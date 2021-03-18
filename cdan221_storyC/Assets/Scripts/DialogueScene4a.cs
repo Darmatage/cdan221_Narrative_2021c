@@ -390,10 +390,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 20)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -405,8 +405,8 @@ public void talking(){         // main story function. Players hit next to progr
             Char3speech.text = "";
             Char4name.text = "";
             Char4speech.text = "";
-            NextScene1Button.SetActive(true);
-            nextButton.SetActive(false);
+            NextScene1Button.SetActive(false);
+            nextButton.SetActive(true);
 
         }
         else if (primeInt == 21)
@@ -986,10 +986,10 @@ public void talking(){         // main story function. Players hit next to progr
 		
 		  else if (primeInt == 65)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -1005,8 +1005,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
 		  else if (primeInt == 66)
         {
-            ArtChar1.SetActive(true);
-            ArtJazzExcited.SetActive(false);
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(true);
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
@@ -1264,7 +1264,14 @@ public void talking(){         // main story function. Players hit next to progr
 	}
 	// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
 	public void Choice1aFunct(){
-			Char1name.text = "";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
 			Char2speech.text = "sounds cool Jazz";
@@ -1275,7 +1282,14 @@ public void talking(){         // main story function. Players hit next to progr
 			allowSpace = true;
 	}
 	public void Choice1bFunct(){
-			Char1name.text = "";
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(true);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
+            Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
 			Char2speech.text = "Rock on!";

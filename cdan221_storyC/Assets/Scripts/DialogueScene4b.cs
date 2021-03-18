@@ -433,10 +433,10 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 22)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -714,10 +714,10 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 40)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -1000,10 +1000,10 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 66)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -1244,10 +1244,10 @@ public class DialogueScene4b : MonoBehaviour
         }
         else if (primeInt == 83)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -1273,6 +1273,13 @@ public class DialogueScene4b : MonoBehaviour
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -1284,6 +1291,13 @@ public class DialogueScene4b : MonoBehaviour
 
         else if (primeInt == 200)
         {
+            ArtChar1.SetActive(false);
+            ArtJazzExcited.SetActive(false);
+            ArtJazzSad.SetActive(false);
+            ArtChar2.SetActive(false);
+            ArtChar3.SetActive(false);
+            ArtChar4.SetActive(false);
+            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -1298,6 +1312,13 @@ public class DialogueScene4b : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
     {
+        ArtChar1.SetActive(false);
+        ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(false);
+        ArtChar2.SetActive(true);
+        ArtChar3.SetActive(false);
+        ArtChar4.SetActive(false);
+        ArtMeepGuitar.SetActive(false);
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "Eddy";
@@ -1310,6 +1331,13 @@ public class DialogueScene4b : MonoBehaviour
     }
     public void Choice1bFunct()
     {
+        ArtChar1.SetActive(false);
+        ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(false);
+        ArtChar2.SetActive(true);
+        ArtChar3.SetActive(false);
+        ArtChar4.SetActive(false);
+        ArtMeepGuitar.SetActive(false);
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "Eddy";

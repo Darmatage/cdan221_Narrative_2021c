@@ -281,6 +281,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
 				Char3speech.text = "";
+			    Char4name.text = "";
+			    Char4speech.text = "";
 		}
 		else if (primeInt == 24){
 				ArtEddy.SetActive(false);
@@ -291,6 +293,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Me too!!";
 				Char3name.text = "";
 				Char3speech.text = "";
+			    Char4name.text = "";
+			    Char4speech.text = "";
 		}
 		else if (primeInt == 25){
 				ArtEddy.SetActive(true);
@@ -299,7 +303,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-				Char4name.text = "Mr.Meep";
+			    Char3name.text = "";
+			    Char3speech.text = "";
+			    Char4name.text = "Mr.Meep";
 				Char4speech.text = "You two did fantastic at practice I have no doubt that our performance will be amazing!";
 		}
 		else if (primeInt == 26){
@@ -311,6 +317,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
 				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
 		}
 		else if (primeInt == 27){
 				ArtEddy.SetActive(true);
@@ -323,6 +331,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
 				Char3speech.text = "";
+				Char4name.text = "";
+				Char4speech.text = "";
 		}
 		else if (primeInt == 28){
 				ArtJazzExcited.SetActive(false);
@@ -331,6 +341,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
 				Char4name.text = "Mr.Meep";
 				Char4speech.text = "You're right. . . There's our queue to get on!";
 		}
