@@ -3327,7 +3327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: choice 2 Room name here
+  m_Text: Stay in room to clean up
 --- !u!222 &1762798532
 CanvasRenderer:
   m_ObjectHideFlags: 0

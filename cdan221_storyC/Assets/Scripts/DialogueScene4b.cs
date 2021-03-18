@@ -761,7 +761,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -773,8 +772,7 @@ public class DialogueScene4b : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
+            ArtChar3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -789,7 +787,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Just let me get the mic all set up and I think we’ll be ready to go. Too bad Mr. Meep couldn't be here.";
             Char2name.text = "";
@@ -804,7 +801,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -815,7 +811,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
-            ArtChar4.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -832,7 +827,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre are we thinking?";
             Char2name.text = "";
@@ -849,7 +843,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(true);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -866,7 +859,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -883,7 +875,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "That would work! What do you think K4t?";
             Char2name.text = "";
@@ -900,7 +891,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(true);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -918,7 +908,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Alright!!";
             Char2name.text = "";
@@ -935,7 +924,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "The group plays their song";
             Char2name.text = "";
@@ -952,7 +940,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -970,7 +957,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(true);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -987,7 +973,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I’m so glad. I was worried we wouldn’t be able to pull something off, but I think the three of us still have a chance here!";
             Char2name.text = "";
@@ -1005,8 +990,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
-            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1032,7 +1015,8 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
+			ArtChar4.SetActive(false);
+			ArtMeepGuitar.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hey! I'm sorry I'm late...";
             Char2name.text = "";
@@ -1049,7 +1033,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1063,7 +1046,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(true);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I'm sorry I couldn't get anyone else to join us...";
             Char2name.text = "";
@@ -1081,7 +1063,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -1098,7 +1079,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(true);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I hope you're right.";
             Char2name.text = "";
@@ -1115,7 +1095,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1129,7 +1108,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Hmmm… what genre were you thinking?";
             Char2name.text = "";
@@ -1146,7 +1124,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1163,7 +1140,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "Sure! That could work with just the two of us.";
             Char2name.text = "";
@@ -1180,7 +1156,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1197,7 +1172,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "The two play their song";
             Char2name.text = "";
@@ -1214,7 +1188,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
@@ -1231,7 +1204,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(false);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
             Char1name.text = "Jazz";
             Char1speech.text = "I’m so glad. I was worried it wouldn't work with just the two of us, but I think we still have a chance here!";
             Char2name.text = "";
@@ -1249,8 +1221,6 @@ public class DialogueScene4b : MonoBehaviour
             ArtJazzSad.SetActive(false);
             ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
-            ArtChar4.SetActive(false);
-            ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Eddy";
