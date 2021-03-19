@@ -1161,6 +1161,7 @@ MonoBehaviour:
   quitButton: {fileID: 447249849}
   bandInventory: {fileID: 1721056997}
   gameHandlerObj: {fileID: 1905210191}
+  audioSource: {fileID: 1206536240}
 --- !u!1 &654885869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,6 +1891,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0fa1eb608f06b446be125b779ee6051, type: 3}
+--- !u!82 &1206536240 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2137985783604927143, guid: d0fa1eb608f06b446be125b779ee6051,
+    type: 3}
+  m_PrefabInstance: {fileID: 1206536239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1267338892
 GameObject:
   m_ObjectHideFlags: 0

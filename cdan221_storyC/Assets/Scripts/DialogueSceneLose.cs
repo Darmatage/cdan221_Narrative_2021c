@@ -33,7 +33,7 @@ public class DialogueSceneLose : MonoBehaviour {
 		public GameObject replayButton;
 		public GameObject quitButton;
         public GameHandler gameHandlerObj;
-       //public AudioSource audioSource;
+       public AudioSource audioSource;
         private bool allowSpace = true;
 		
 		

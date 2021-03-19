@@ -1835,6 +1835,7 @@ MonoBehaviour:
   NextScene2Button: {fileID: 1077772155}
   nextButton: {fileID: 2015085870}
   gameHandlerObj: {fileID: 1920634821}
+  audioSource: {fileID: 1634826148}
 --- !u!114 &1097056645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,6 +2675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2137985783604927143, guid: d0fa1eb608f06b446be125b779ee6051,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 896c2a59aeda9544c91a1f3a06367589, type: 3}
     - target: {fileID: 6103163415900101354, guid: d0fa1eb608f06b446be125b779ee6051,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2736,6 +2742,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0fa1eb608f06b446be125b779ee6051, type: 3}
+--- !u!82 &1634826148 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2137985783604927143, guid: d0fa1eb608f06b446be125b779ee6051,
+    type: 3}
+  m_PrefabInstance: {fileID: 1634826147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1656416960
 GameObject:
   m_ObjectHideFlags: 0

@@ -1051,6 +1051,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1905210191}
+    - target: {fileID: 1651503233064025399, guid: 77cc6aeff56d0ea428fdfda405fc44a2,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1651503233111903429, guid: 77cc6aeff56d0ea428fdfda405fc44a2,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1289,7 +1294,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6c27a41456022e24498f8e049e1935f2, type: 3}
+      objectReference: {fileID: 8300000, guid: 21583951486a86948aebd986c3a3df36, type: 3}
     - target: {fileID: 6103163415900101354, guid: d0fa1eb608f06b446be125b779ee6051,
         type: 3}
       propertyPath: m_LocalPosition.x
