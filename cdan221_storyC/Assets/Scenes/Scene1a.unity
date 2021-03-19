@@ -2147,6 +2147,8 @@ MonoBehaviour:
   Char2speech: {fileID: 286212449}
   dialogue: {fileID: 1379365252}
   ArtChar1: {fileID: 1573731369}
+  ArtJazzExcited: {fileID: 2143053439}
+  ArtJazzSad: {fileID: 1468333638}
   ArtChar2: {fileID: 1137547561}
   ArtBG1: {fileID: 1109562490}
   Choice1a: {fileID: 44010867}

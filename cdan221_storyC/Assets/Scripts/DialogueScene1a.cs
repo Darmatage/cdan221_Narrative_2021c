@@ -17,6 +17,8 @@ public class DialogueScene1a : MonoBehaviour {
         // public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		public GameObject ArtJazzExcited;
+		public GameObject ArtJazzSad;
 		public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -31,6 +33,8 @@ public class DialogueScene1a : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
+		ArtJazzExcited.SetActive(false);
+        ArtJazzSad.SetActive(false);
 		ArtChar2.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -58,7 +62,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
 				Intercomname.text = "Intercom";
-				Intercomspeech.text = "*Hello Woods High juniors! The faculty to hold a new Junior talent contest. Sign up is Friday and you must have your act together by then! The winner will receive a $100 book gift card*";
+				Intercomspeech.text = "*Hello Woods High juniors! The faculty to hold a new Junior talent contest. Sign up is Friday and you must have your act together by then! The winner will receive a $100 bookstore gift card*";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -74,6 +78,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
+				ArtChar1.SetActive(false);		   
 				ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -81,6 +86,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Hmm… I’m not sure, can’t you sing Jazz?";
         }
        else if (primeInt == 5){
+				ArtChar1.SetActive(false);	
+				ArtJazzExcited.SetActive(false);
+				ArtJazzSad.SetActive(true);			
+				ArtChar2.SetActive(false);		   
                 Char1name.text = "Jazz";
                 Char1speech.text = "Yeah but not good enough to win!";
                 Char2name.text = "";
@@ -88,18 +97,28 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
+				ArtChar1.SetActive(false);		   
+		   		ArtChar2.SetActive(true);	
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
                 Char2speech.text = "Oh I have an Idea!";
         }
        else if (primeInt ==7){
+				ArtChar1.SetActive(false);	
+				ArtJazzExcited.SetActive(true);
+				ArtJazzSad.SetActive(false);			
+				ArtChar2.SetActive(false);			   
                 Char1name.text = "Jazz";
                 Char1speech.text = "Then tell me Eddy! What are you waiting for";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
+				ArtChar1.SetActive(false);	
+				ArtJazzExcited.SetActive(false);
+				ArtJazzSad.SetActive(false);			
+				ArtChar2.SetActive(true);			   
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
