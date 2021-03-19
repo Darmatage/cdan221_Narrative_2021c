@@ -136,7 +136,7 @@ public class DialogueScene4b : MonoBehaviour
         else if (primeInt == 5)
         {
             ArtChar1.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -180,7 +180,7 @@ public class DialogueScene4b : MonoBehaviour
         else if (primeInt == 8)
         {
             ArtChar1.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -234,7 +234,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -288,7 +288,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -399,7 +399,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -742,7 +742,7 @@ public class DialogueScene4b : MonoBehaviour
         {
             dialogue.SetActive(true);
             ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -841,7 +841,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -889,7 +889,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -955,7 +955,7 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";

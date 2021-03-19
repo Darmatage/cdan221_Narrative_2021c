@@ -2710,7 +2710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " \u201CWhere should I go first?\u201D"
+  m_Text: Who will play the keyboard
 --- !u!222 &1745289574
 CanvasRenderer:
   m_ObjectHideFlags: 0

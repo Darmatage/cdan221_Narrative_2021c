@@ -136,7 +136,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -214,7 +214,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -264,7 +264,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -374,7 +374,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -759,7 +759,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -828,7 +828,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -878,7 +878,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
@@ -951,7 +951,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(false);
             ArtJazzExcited.SetActive(false);
             ArtJazzSad.SetActive(false);
-            ArtChar2.SetActive(false);
+            ArtChar2.SetActive(true);
             ArtChar3.SetActive(true);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);

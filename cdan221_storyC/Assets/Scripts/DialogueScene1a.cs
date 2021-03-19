@@ -97,7 +97,8 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-				ArtChar1.SetActive(false);		   
+				ArtChar1.SetActive(false);	
+				ArtJazzSad.SetActive(false);					
 		   		ArtChar2.SetActive(true);	
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -125,25 +126,36 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "We can make a band! I’ll play the drums";
         }
 		 else if (primeInt == 9){
+				ArtJazzSad.SetActive(true);		
+				ArtChar2.SetActive(false);					
                 Char1name.text = "Jazz";
                 Char1speech.text = "Won’t we need more people for that?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		 else if (primeInt == 10){
+				ArtJazzSad.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
                 Char2speech.text = "Oh yeah, I guess you are right";
         }
 		 else if (primeInt == 11){
+			 	ArtChar1.SetActive(true);	
+				ArtJazzExcited.SetActive(false);
+				ArtJazzSad.SetActive(false);			
+				ArtChar2.SetActive(false);	
                 Char1name.text = "Jazz";
                 Char1speech.text = "we only have five days! How are we supposed to find a group in time";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		 else if (primeInt == 12){
-			 
+			 	ArtChar1.SetActive(true);	
+				ArtJazzExcited.SetActive(false);
+				ArtJazzSad.SetActive(false);			
+				ArtChar2.SetActive(true);	
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
@@ -158,6 +170,10 @@ public void talking(){         // main story function. Players hit next to progr
 	
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
+		   		ArtChar1.SetActive(true);	
+				ArtJazzExcited.SetActive(false);
+				ArtJazzSad.SetActive(false);			
+				ArtChar2.SetActive(false);	
                 Char1name.text = "Jazz";
                 Char1speech.text = "Okay!";
                 Char2name.text = "";
@@ -185,10 +201,11 @@ public void talking(){         // main story function. Players hit next to progr
 	}
 	// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
 	public void Choice1aFunct(){
+			ArtChar2.SetActive(true);		
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
-			Char2speech.text = "Go to the cafetorium";
+			Char2speech.text = "I think K4t does! bring them food!";
 			primeInt = 99;
 			Choice1a.SetActive(false);
 			Choice1b.SetActive(false);
@@ -196,6 +213,7 @@ public void talking(){         // main story function. Players hit next to progr
 			allowSpace = true;
 	}
 	public void Choice1bFunct(){
+			ArtChar2.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Eddy";
