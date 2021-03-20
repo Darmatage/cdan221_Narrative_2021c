@@ -125,7 +125,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtJazzExcited.SetActive(false);
 				ArtJazzMic.SetActive(true);
                 Char1name.text = "Jazz";
-                Char1speech.text = "Oh look it's the queue for us to get on!! Let's go!!!";
+                Char1speech.text = "Oh look it's the cue for us to get on!! Let's go!!!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";

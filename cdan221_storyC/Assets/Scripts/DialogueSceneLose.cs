@@ -155,7 +155,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Eddy";
-                Char2speech.text = "You're right. . . There's our queue to get on!";
+                Char2speech.text = "You're right. . . There's our cue to get on!";
 		}
 		else if (primeInt == 9){
 				ArtBG1.SetActive(false);
@@ -253,7 +253,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "K4t";
-				Char3speech.text = "You're right. . . There's our queue to get on!";
+				Char3speech.text = "You're right. . . There's our cue to get on!";
 		}
 		else if (primeInt == 19){
 				ArtBG1.SetActive(false);
@@ -359,7 +359,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 				Char4name.text = "Mr.Meep";
-				Char4speech.text = "You're right. . . There's our queue to get on!";
+				Char4speech.text = "You're right. . . There's our cue to get on!";
 		}
 		else if (primeInt == 29){
 				ArtBG1.SetActive(false);
