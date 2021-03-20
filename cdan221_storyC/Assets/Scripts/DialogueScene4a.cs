@@ -322,7 +322,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
             Char1name.text = "";
-            Char1speech.text = "The group plays their song";
+            Char1speech.text = "(The group plays their song)";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";

@@ -348,8 +348,8 @@ public class DialogueScene4b : MonoBehaviour
             ArtChar3.SetActive(false);
             ArtChar4.SetActive(false);
             ArtMeepGuitar.SetActive(false);
-            Char1name.text = "Jazz";
-            Char1speech.text = "The group plays their song";
+            Char1name.text = "";
+            Char1speech.text = "(The group plays their song)";
             Char2name.text = "";
             Char2speech.text = "";
             Char3name.text = "";
